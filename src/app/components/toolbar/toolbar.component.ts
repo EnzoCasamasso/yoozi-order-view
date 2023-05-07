@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, effect, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 type NavButton = {
@@ -14,5 +14,6 @@ type NavButton = {
 })
 export class ToolbarComponent {
   @Input({required: true}) navButtons: NavButton[] = [];
+  
 
 }

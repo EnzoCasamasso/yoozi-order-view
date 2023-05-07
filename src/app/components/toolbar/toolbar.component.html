@@ -1,18 +1,24 @@
-<div class="flex items-center h-16 bg-slate-50 shadow-lg left-0 w-full fixed">
-    <div class="flex-1">
-        <h2>Yoozi</h2>
+<div class="flex items-center h-16 bg-slate-50 shadow-lg left-0 top-7 w-full fixed">
+    <div class="flex-1 flex items-center justify-center">
+        <p>Yoozi</p>
     </div>
     <nav class="flex">
         <div class="flex justify-center items-center gap-14">
             <div *ngFor="let button of navButtons">
                 <a
                 [href]="button.route" 
-                class="cursor-pointer">
+                class="cursor-pointer text-gray-500">
                     {{ button.name }}
                 </a>
             </div>
         </div>
     </nav>
-    <div class="flex-1">
+    <div class="flex-1 flex items-center justify-center gap-5">
+        <button class="text-amber-400">
+            ENTRAR
+        </button>
+        <button class="border-2 p-2 border-amber-300 rounded hover:bg-amber-300 duration-500">
+            ASSINAR AGORA
+        </button>
     </div>
 </div>

@@ -1,0 +1,18 @@
+<div class="flex items-center h-16 bg-slate-50 shadow-lg left-0 w-full fixed">
+    <div class="flex-1">
+        <h2>Yoozi</h2>
+    </div>
+    <nav class="flex">
+        <div class="flex justify-center items-center gap-14">
+            <div *ngFor="let button of navButtons">
+                <a
+                [href]="button.route" 
+                class="cursor-pointer">
+                    {{ button.name }}
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex-1">
+    </div>
+</div>

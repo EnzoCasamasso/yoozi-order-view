@@ -9,5 +9,5 @@ import { ComponentsModule } from 'src/app/components/components.module';
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
-
+  
 }

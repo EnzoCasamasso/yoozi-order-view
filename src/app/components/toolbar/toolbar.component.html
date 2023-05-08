@@ -1,4 +1,5 @@
-<div class="flex items-center h-16 bg-slate-50 shadow-lg left-0 top-7 w-full fixed">
+<div class="flex items-center h-16 bg-white left-0 top-7 w-full fixed"
+    [ngClass]="{'shadow-lg duration-700': isScrolled}">
     <div class="flex-1 flex items-center justify-center">
         <p>Yoozi</p>
     </div>
@@ -7,14 +8,16 @@
             <div *ngFor="let button of navButtons">
                 <a
                 [href]="button.route" 
-                class="cursor-pointer text-gray-500">
+                class="p-4 cursor-pointer text-gray-500 hover:text-black duration-300
+                hover:shadow-l hover:shadow-r hover:shadow-lg hover:rounded-md 
+                ">
                     {{ button.name }}
                 </a>
             </div>
         </div>
     </nav>
     <div class="flex-1 flex items-center justify-center gap-5">
-        <button class="text-amber-400 font-semibold">
+        <button class="pb-5 pl-5 pt-5 text-amber-400 font-semibold hover:text-purple-500 duration-500">
             ENTRAR
         </button>
         <button class="text-sm font-semibold border-2 p-2 border-amber-300 rounded hover:bg-amber-300 duration-500">

@@ -11,6 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   count = signal<number>(0)
+
   constructor() {
     effect(() => {
       console.log(`This is a valus of count: ${this.count()}`)

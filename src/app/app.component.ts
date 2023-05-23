@@ -7,18 +7,17 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [CommonModule, ComponentsModule, RouterOutlet]
+  imports: [CommonModule, ComponentsModule, RouterOutlet],
 })
 export class AppComponent {
-  count = signal<number>(0)
-
+  count = signal<number>(0);
   constructor() {
     effect(() => {
-      console.log(`This is a valus of count: ${this.count()}`)
-    })
+      console.log(`This is a value of count: ${this.count()}`);
+    });
   }
 
   update() {
-    this.count.update((value) => value + 1)
+    this.count.update((value) => value + 1);
   }
 }

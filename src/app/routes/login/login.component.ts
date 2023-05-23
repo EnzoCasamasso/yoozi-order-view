@@ -6,8 +6,5 @@ import { Component, signal } from '@angular/core';
 })
 export class LoginComponent {
   name = signal<string>('Enzo Casamasso')
-
-  constructor() {
-
-  }
+  constructor() { }
 }
